@@ -3,24 +3,16 @@ Ce projet consiste à développer une bibliothèque simple en C++ qui gère l'ac
 
 ## Pour le dossier Librairie Dynamique
 ### Compilez et exécutez ce programme avec les commandes suivantes :
-sh run.sh
-g++ main.cpp -L/(chemin absolu vers le dossier contenant le .so) -lactivation -o main.exe
-./main.exe
-
+* executer le fichier run.sh: sh run.sh
+* creer un fichier de configuration .conf dans /etc/ld.so.conf.d/
+      Par exemple: libActiveDyn.conf
+* executer le commande: ldconfig
+* compiler le fichier main.cpp :  g++ main.cpp -L/home/$(logname)/libActiveDyn -lactivation -o main.exe
+* executer: ./main.exe
 
 ## Pour le dossier Librairie Statique
-### Compilation
-
-Pour compiler le projet, vous devez d'abord générer un fichier objet à partir de `CodeActivation.cpp`, puis créer une bibliothèque partagée (`libactivation.a`) à partir de ce fichier objet. Voici les commandes à utiliser :
-
-
-### Utilisation
-
-Pour utiliser la bibliothèque dans un autre programme, vous devez inclure `CodeActivation.hpp` et lier contre `libactivation.a`. Voici un exemple de programme qui utilise la bibliothèque :
-
-
 ### Compilez et exécutez ce programme avec les commandes suivantes :
-sh run_statique.sh
-g++ main.cpp -L/home/chemin -lactivation -o teststatique.exe
-./teststatique.exe
+* executer le fichier run.sh: sh run.sh
+* compiler le fichier main.cpp: g++ main.cpp -L/home/$(logname)/libActiveStat -lactivation -o main.exe
+* executer: ./main.exe
 
