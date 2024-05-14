@@ -8,7 +8,8 @@ Point3D::Point3D()
 }
 Point3D::Point3D(float abs, float ord, float z)
 {
-	Point(abs,ord);
+	x = abs;
+	y = ord;
 	this->z = z;
 }
 Point3D::~Point3D()
@@ -18,8 +19,7 @@ Point3D::~Point3D()
 
 void Point3D::display()
 {
-	Point::display();
-	cout << "z: " << z << endl;
+	cout << "( " << x << ", " << y << ", " <<  z << " )" << endl;
 }
 void Point3D::setZ(float newZ)
 {

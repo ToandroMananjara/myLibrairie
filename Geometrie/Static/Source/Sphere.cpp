@@ -4,7 +4,7 @@
 #include "../Header/Point3D.hpp"
 #define pi 3.14
 using namespace std;
-// constructeur de la classe cercle 
+// constructeur de la classe sphere
 Sphere::Sphere()
 {
 	
@@ -49,7 +49,7 @@ void Sphere::aire()
     float aire = 4*pi*rayon*rayon;
     cout << "L'aire de ce sphere est: " << aire << " cm²" << endl;
 }
-// Calcul d'volume
+// Calcul de volume
 void Sphere::volume()
 {
     float volume = (4/3)*pi*rayon*rayon*rayon;

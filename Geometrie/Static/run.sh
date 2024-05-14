@@ -8,3 +8,5 @@ g++ -fPIC -c Source/Rectangle.cpp -o Rectangle.o
 g++ -fPIC -c Source/Sphere.cpp -o Sphere.o
 g++ -fPIC -c Source/Triangle.cpp -o Triangle.o
 ar -rv libgeometrie.a *.o 
+mkdir -p /home/$(logname)/libGeomStat
+cp libgeometrie.a /home/$(logname)/libGeomStat
