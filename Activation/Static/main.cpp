@@ -17,7 +17,7 @@ int main()
         }
         else
         {
-            std::cout << "Vous pouvez passer en mode essai" << std::endl;
+            std::cout << "clé incorrect " << std::endl << "Vous pouvez passer en mode essai" << std::endl;
         }
     }
     else

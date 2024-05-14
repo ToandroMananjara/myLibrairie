@@ -1,5 +1,4 @@
 #include "../Header/Activation.hpp"
-
 bool Activation::verifActivation()
 {
     std::ifstream fs("Files/key.txt");
@@ -38,7 +37,7 @@ bool Activation::verifActivation()
 void Activation::activate()
 {
     std::ofstream fs("Files/try.txt");
-    fs << "activated";
+    fs << "30";
     status = true;
     fs.close();
 }
